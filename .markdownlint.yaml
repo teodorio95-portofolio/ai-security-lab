@@ -1,0 +1,5 @@
+# Relaxed: long lines, inline HTML (mermaid/badges) and missing H1 are fine.
+default: true
+MD013: false
+MD033: false
+MD041: false
