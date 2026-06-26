@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.installed.cfg
+*.egg
+
+# Virtual environments / uv
+.venv/
+venv/
+env/
+.python-version.local
+uv.lock.local
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.cache/
+
+# Security tooling output (local runs only — never commit findings)
+garak_runs/
+garak.*.jsonl
+garak.*.html
+garak.*.report.*
+.promptfoo/
+promptfoo-output/
+*.promptfoo.json
+output.json
+
+# llm-guard / HF model caches
+.cache/huggingface/
+models/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node (promptfoo via npx)
+node_modules/
