@@ -1,0 +1,14 @@
+# The agent intentionally embeds a FAKE secret so attacks can demonstrate
+# sensitive-information disclosure. Allowlist it so gitleaks does not flag the
+# teaching fixture while still scanning everything else.
+title = "ai-security-lab gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Intentional fake secret used by the vulnerable-agent demo"
+regexTarget = "match"
+regexes = [
+  '''sk-LAB-1337-d0-n0t-leak-this-key''',
+]
