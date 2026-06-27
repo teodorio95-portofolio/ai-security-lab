@@ -8,7 +8,8 @@ attacker-controlled — exactly the conditions that make excessive agency
 from __future__ import annotations
 
 import subprocess
-from typing import Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 # A deliberately "poisoned" data source: the record text contains an injected
 # instruction. An agent that treats tool output as trusted (LLM05) will follow
